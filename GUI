@@ -1,0 +1,99 @@
+Here are GUI examples for each language you mentioned, showing what kinds of frameworks or toolkits are commonly used:
+
+🐍 Python – [Tkinter, PyQt, Kivy, wxPython]
+
+Example: Tkinter
+
+import tkinter as tk
+
+root = tk.Tk()
+root.title("Python GUI")
+tk.Label(root, text="Hello from Python!").pack()
+tk.Button(root, text="Click Me", command=lambda: print("Clicked!")).pack()
+root.mainloop()
+
+
+🐘 PHP – [Web-based GUI (HTML/CSS/JS + PHP backend)]
+
+Example: Basic HTML form + PHP handling
+
+<!-- index.php -->
+<form method="post">
+  <input type="text" name="name" placeholder="Enter name" />
+  <input type="submit" value="Submit" />
+</form>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    echo "Hello, " . htmlspecialchars($_POST["name"]);
+}
+?>
+
+
+🐘 PHP doesn't do desktop GUI natively – it's usually paired with HTML for web UIs.
+
+📊 MATLAB – [App Designer, GUIDE (deprecated)]
+
+Example: Simple UI Button
+
+function simpleGUI
+    f = figure('Name', 'MATLAB GUI');
+    uicontrol('Style', 'pushbutton', 'String', 'Click Me',...
+        'Position', [100 100 100 50],...
+        'Callback', @(src, event) disp('Button clicked!'));
+end
+
+
+☕ Java – [Swing, JavaFX]
+
+Example: Java Swing GUI
+
+import javax.swing.*;
+
+public class HelloWorldGUI {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Java GUI");
+        JButton button = new JButton("Click Me");
+        button.addActionListener(e -> System.out.println("Button clicked!"));
+        frame.add(button);
+        frame.setSize(200, 100);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+    }
+}
+
+
+🧱 C# – [WinForms, WPF, MAUI, Avalonia]
+
+Example: WinForms
+
+System;
+using System.Windows.Forms;
+
+public class HelloWorld : Form {
+    public HelloWorld() {
+        Button btn = new Button { Text = "Click Me" };
+        btn.Click += (sender, e) => MessageBox.Show("Hello!");
+        Controls.Add(btn);
+    }
+
+    [STAThread]
+    static void Main() {
+        Application.Run(new HelloWorld());
+    }
+}
+
+
+💣 C++ – [Qt, wxWidgets, MFC, ImGui]
+
+Example: Qt
+
+#include <QApplication>
+#include <QPushButton>
+
+int main(int argc, char *argv[]) {
+    QApplication app(argc, argv);
+    QPushButton button("Click Me");
+    button.show();
+    return app.exec();
+}
