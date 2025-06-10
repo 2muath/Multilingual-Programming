@@ -1,0 +1,138 @@
+✅ 1. Python (Python didn’t have traditional switch until 3.10)
+
+Use match in Python 3.10+:
+
+x = 2
+
+match x:
+    case 1:
+        print("One")
+    case 2:
+        print("Two")
+    case _:
+        print("Default")
+
+
+match is Python’s version of switch.
+
+case _ acts as default.
+
+For older versions, use if/elif chains or dictionaries.
+
+✅ 2. PHP
+
+$x = 2;
+
+switch ($x) {
+    case 1:
+        echo "One";
+        break;
+    case 2:
+        echo "Two";
+        break;
+    default:
+        echo "Default";
+}
+
+
+Requires break to prevent fall-through.
+
+default is optional.
+
+✅ 3. MATLAB
+
+MATLAB uses switch/case like this:
+
+x = 2;
+
+switch x
+    case 1
+        disp('One')
+    case 2
+        disp('Two')
+    otherwise
+        disp('Default')
+end
+
+
+No break needed.
+
+otherwise is the default case.
+
+Ends with end.
+
+✅ 4. Java
+
+int x = 2;
+
+switch (x) {
+    case 1:
+        System.out.println("One");
+        break;
+    case 2:
+        System.out.println("Two");
+        break;
+    default:
+        System.out.println("Default");
+}
+
+
+Requires break to avoid fall-through.
+
+Since Java 14+, enhanced switch is available.
+
+Java 14+ version:
+
+switch (x) {
+    case 1 -> System.out.println("One");
+    case 2 -> System.out.println("Two");
+    default -> System.out.println("Default");
+}
+
+
+✅ 5. C#
+
+int x = 2;
+
+switch (x) {
+    case 1:
+        Console.WriteLine("One");
+        break;
+    case 2:
+        Console.WriteLine("Two");
+        break;
+    default:
+        Console.WriteLine("Default");
+        break;
+}
+
+
+Very similar to Java.
+
+C# 8.0+ also supports switch expressions.
+
+Example (C# 8+):
+
+string result = x switch
+{
+    1 => "One",
+    2 => "Two",
+    _ => "Default"
+};
+Console.WriteLine(result);
+
+
+✅ 6. C++
+
+int x = 2;
+
+switch (x) {
+    case 1:
+        std::cout << "One" << std::endl;
+        break;
+    case 2:
+        std::cout << "Two" << std::endl;
+        break;
+    default:
+        std::cout << "Default" << std::endl;
+}
