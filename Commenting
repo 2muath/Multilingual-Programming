@@ -1,0 +1,64 @@
+Here’s how commenting works in each of the listed languages — both single-line and multi-line (block) comments where applicable:
+
+1. Python
+
+# This is a single-line comment
+
+"""
+This is a
+multi-line comment (commonly used as a docstring)
+"""
+
+
+2. PHP
+
+// This is a single-line comment
+
+# This is also a single-line comment
+
+/*
+This is a 
+multi-line comment
+*/
+
+
+3. MATLAB
+
+% This is a single-line comment
+
+%{
+This is a
+multi-line comment
+%}
+
+
+4. Java
+
+// This is a single-line comment
+
+/*
+This is a 
+multi-line comment
+*/
+
+
+5. C#
+
+// This is a single-line comment
+
+/*
+This is a 
+multi-line comment
+*/
+
+
+6. C++
+
+// This is a single-line comment
+
+/*
+This is a 
+multi-line comment
+*/
+
+
