@@ -1,0 +1,88 @@
+🔁 General Behavior of while
+
+The loop executes as long as the condition is true.
+
+The condition is checked before each iteration.
+
+✅ 1. Python
+
+x = 0
+while x < 3:
+    print(x)
+    x += 1
+
+
+No parentheses.
+
+No semicolons.
+
+Indentation defines scope.
+
+✅ 2. PHP
+
+$x = 0;
+while ($x < 3) {
+    echo $x . "\n";
+    $x++;
+}
+
+
+$ before variables.
+
+Braces {} for block.
+
+Semicolon ; ends statements.
+
+✅ 3. MATLAB
+
+x = 0;
+while x < 3
+    disp(x)
+    x = x + 1;
+end
+
+
+No need for parentheses.
+
+Ends with end.
+
+Uses disp() for display.
+
+✅ 4. Java
+
+int x = 0;
+while (x < 3) {
+    System.out.println(x);
+    x++;
+}
+
+
+Parentheses and braces required.
+
+Ends with ;.
+
+Uses System.out.println.
+
+✅ 5. C#
+
+int x = 0;
+while (x < 3) {
+    Console.WriteLine(x);
+    x++;
+}
+
+
+Almost identical to Java.
+
+Uses Console.WriteLine.
+
+✅ 6. C++
+
+#include <iostream>
+using namespace std;
+
+int x = 0;
+while (x < 3) {
+    cout << x << endl;
+    x++;
+}
