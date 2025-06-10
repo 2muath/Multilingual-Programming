@@ -1,0 +1,284 @@
+
+✅ 1. Python
+
+🔸 Implicit:
+
+x = 10     # int
+y = 2.5    # float
+z = x + y  # z becomes float
+
+
+🔸 Explicit (Type Casting):
+
+int("10")      # string to int
+float("3.14")  # string to float
+str(42)        # int to string
+
+
+✅ 2. PHP
+
+🔸 Implicit:
+
+PHP does automatic type juggling.
+
+$x = "10" + 5;   // $x is int(15)
+
+
+🔸 Explicit (Type Casting):
+
+$x = (int)"123";
+$y = (float)"3.14";
+$z = (string)25;
+
+
+✅ 3. MATLAB
+
+🔸 Implicit:
+
+MATLAB automatically converts types in expressions.
+
+a = int32(5);
+b = 2.5;
+c = a + b; % 'a' is promoted to double
+
+
+🔸 Explicit:
+
+x = double(10);     % int to double
+y = int8(3.14);     % truncates to int8
+z = num2str(25);    % number to string
+n = str2double('3.14');  % string to number
+
+
+✅ 4. Java
+
+🔸 Implicit (Widening):
+
+int x = 10;
+double y = x;  // OK
+
+
+🔸 Explicit (Narrowing):
+
+double a = 3.14;
+int b = (int) a;   // b = 3 (truncated)
+
+
+🔸 String conversions:
+
+String s = String.valueOf(123);      // int to string
+int x = Integer.parseInt("123");     // string to int
+
+
+✅ 5. C
+
+🔸 Implicit:
+
+int x = 10;
+float y = x + 2.5;  // int promoted to float
+
+
+🔸 Explicit:
+
+float f = 3.14;
+int i = (int)f;  // truncated
+
+
+🔸 String <-> Number (via library):
+
+#include <stdlib.h>
+int x = atoi("123");  // string to int
+char str[10];
+sprintf(str, "%d", 42);  // int to string
+
+
+✅ 6. C++
+
+🔸 Implicit:
+
+Same as C.
+
+🔸 Explicit (C-style and C++ style):
+
+double d = 3.14;
+int i = (int)d;               // C-style cast
+int j = static_cast<int>(d);  // C++-style cast
+
+
+🔸 String Conversions (C++11+):
+
+#include <string>
+int x = std::stoi("123");      // string to int
+std::string s = std::to_string(42);  // int to string
+
+
+✅ 7. C#
+
+🔸 Implicit:
+
+int x = 123;
+double y = x;  // implicit conversion
+
+
+🔸 Explicit:
+
+double d = 3.14;
+int i = (int)d;  // explicit cast
+
+
+🔸 String conversions:
+
+int x = int.Parse("123");
+string s = 42.ToString();
+
+
+🔸 Using Convert class:
+
+int x = Convert.ToInt32("456");
+double y = Convert.ToDouble("3.14");
+
+
+✅ Summary Table
+
+LanguageImplicitExplicit (Cast)String ↔ NumberPython✅int(), float()str(), int("123")PHP✅(int), (float)(string), intval()MATLAB✅double(), int8()num2str(), str2double()Java✅(int), (double)Integer.parseInt(), String.valueOf()C✅(int), (float)atoi(), sprintf()C++✅(int), static_cast<>stoi(), to_string()C#✅(int), (double)int.Parse(), Convert.ToX()
+
+🔸 Implicit:
+
+x = 10     # int
+y = 2.5    # float
+z = x + y  # z becomes float
+
+
+🔸 Explicit (Type Casting):
+
+int("10")      # string to int
+float("3.14")  # string to float
+str(42)        # int to string
+
+
+✅ 2. PHP
+
+🔸 Implicit:
+
+PHP does automatic type juggling.
+
+$x = "10" + 5;   // $x is int(15)
+
+
+🔸 Explicit (Type Casting):
+
+$x = (int)"123";
+$y = (float)"3.14";
+$z = (string)25;
+
+
+✅ 3. MATLAB
+
+🔸 Implicit:
+
+MATLAB automatically converts types in expressions.
+
+a = int32(5);
+b = 2.5;
+c = a + b; % 'a' is promoted to double
+
+
+🔸 Explicit:
+
+x = double(10);     % int to double
+y = int8(3.14);     % truncates to int8
+z = num2str(25);    % number to string
+n = str2double('3.14');  % string to number
+
+
+✅ 4. Java
+
+🔸 Implicit (Widening):
+
+int x = 10;
+double y = x;  // OK
+
+
+🔸 Explicit (Narrowing):
+
+double a = 3.14;
+int b = (int) a;   // b = 3 (truncated)
+
+
+🔸 String conversions:
+
+String s = String.valueOf(123);      // int to string
+int x = Integer.parseInt("123");     // string to int
+
+
+✅ 5. C
+
+🔸 Implicit:
+
+int x = 10;
+float y = x + 2.5;  // int promoted to float
+
+
+🔸 Explicit:
+
+float f = 3.14;
+int i = (int)f;  // truncated
+
+
+🔸 String <-> Number (via library):
+
+#include <stdlib.h>
+int x = atoi("123");  // string to int
+char str[10];
+sprintf(str, "%d", 42);  // int to string
+
+
+✅ 6. C++
+
+🔸 Implicit:
+
+Same as C.
+
+🔸 Explicit (C-style and C++ style):
+
+double d = 3.14;
+int i = (int)d;               // C-style cast
+int j = static_cast<int>(d);  // C++-style cast
+
+
+🔸 String Conversions (C++11+):
+
+#include <string>
+int x = std::stoi("123");      // string to int
+std::string s = std::to_string(42);  // int to string
+
+
+✅ 7. C#
+
+🔸 Implicit:
+
+int x = 123;
+double y = x;  // implicit conversion
+
+
+🔸 Explicit:
+
+double d = 3.14;
+int i = (int)d;  // explicit cast
+
+
+🔸 String conversions:
+
+int x = int.Parse("123");
+string s = 42.ToString();
+
+
+🔸 Using Convert class:
+
+int x = Convert.ToInt32("456");
+double y = Convert.ToDouble("3.14");
+
+
+✅ Summary Table
+
+LanguageImplicitExplicit (Cast)String ↔ NumberPython✅int(), float()str(), int("123")PHP✅(int), (float)(string), intval()MATLAB✅double(), int8()num2str(), str2double()Java✅(int), (double)Integer.parseInt(), String.valueOf()C✅(int), (float)atoi(), sprintf()C++✅(int), static_cast<>stoi(), to_string()C#✅(int), (double)int.Parse(), Convert.ToX()
