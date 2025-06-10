@@ -1,0 +1,173 @@
+🎯 Math Equation
+
+To solve the quadratic equation:
+
+
+Use the quadratic formula:
+
+We’ll write a program in each language to:
+
+Take input for a, b, and c
+
+Compute the discriminant
+
+Output the real roots (if any)
+
+✅ Code in Different Languages:
+
+1. Python
+
+import math
+
+a = float(input("Enter a: "))
+b = float(input("Enter b: "))
+c = float(input("Enter c: "))
+
+discriminant = b**2 - 4*a*c
+
+if discriminant > 0:
+    root1 = (-b + math.sqrt(discriminant)) / (2*a)
+    root2 = (-b - math.sqrt(discriminant)) / (2*a)
+    print(f"Two real roots: {root1}, {root2}")
+elif discriminant == 0:
+    root = -b / (2*a)
+    print(f"One real root: {root}")
+else:
+    print("No real roots")
+
+
+2. PHP (CLI)
+
+<?php
+echo "Enter a: ";
+$a = (float)trim(fgets(STDIN));
+echo "Enter b: ";
+$b = (float)trim(fgets(STDIN));
+echo "Enter c: ";
+$c = (float)trim(fgets(STDIN));
+
+$discriminant = $b*$b - 4*$a*$c;
+
+if ($discriminant > 0) {
+    $root1 = (-$b + sqrt($discriminant)) / (2*$a);
+    $root2 = (-$b - sqrt($discriminant)) / (2*$a);
+    echo "Two real roots: $root1, $root2\n";
+} elseif ($discriminant == 0) {
+    $root = -$b / (2*$a);
+    echo "One real root: $root\n";
+} else {
+    echo "No real roots\n";
+}
+?>
+
+
+3. MATLAB
+
+a = input('Enter a: ');
+b = input('Enter b: ');
+c = input('Enter c: ');
+
+D = b^2 - 4*a*c;
+
+if D > 0
+    root1 = (-b + sqrt(D)) / (2*a);
+    root2 = (-b - sqrt(D)) / (2*a);
+    fprintf('Two real roots: %.2f, %.2f\n', root1, root2);
+elseif D == 0
+    root = -b / (2*a);
+    fprintf('One real root: %.2f\n', root);
+else
+    disp('No real roots');
+end
+
+
+4. Java
+
+import java.util.Scanner;
+
+public class QuadraticSolver {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a: ");
+        double a = sc.nextDouble();
+        System.out.print("Enter b: ");
+        double b = sc.nextDouble();
+        System.out.print("Enter c: ");
+        double c = sc.nextDouble();
+
+        double discriminant = b*b - 4*a*c;
+
+        if (discriminant > 0) {
+            double root1 = (-b + Math.sqrt(discriminant)) / (2*a);
+            double root2 = (-b - Math.sqrt(discriminant)) / (2*a);
+            System.out.println("Two real roots: " + root1 + ", " + root2);
+        } else if (discriminant == 0) {
+            double root = -b / (2*a);
+            System.out.println("One real root: " + root);
+        } else {
+            System.out.println("No real roots");
+        }
+    }
+}
+
+
+5. C#
+
+using System;
+
+class Program {
+    static void Main() {
+        Console.Write("Enter a: ");
+        double a = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Enter b: ");
+        double b = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Enter c: ");
+        double c = Convert.ToDouble(Console.ReadLine());
+
+        double discriminant = b * b - 4 * a * c;
+
+        if (discriminant > 0) {
+            double root1 = (-b + Math.Sqrt(discriminant)) / (2 * a);
+            double root2 = (-b - Math.Sqrt(discriminant)) / (2 * a);
+            Console.WriteLine($"Two real roots: {root1}, {root2}");
+        } else if (discriminant == 0) {
+            double root = -b / (2 * a);
+            Console.WriteLine($"One real root: {root}");
+        } else {
+            Console.WriteLine("No real roots");
+        }
+    }
+}
+
+
+6. C++
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double a, b, c;
+    cout << "Enter a: ";
+    cin >> a;
+    cout << "Enter b: ";
+    cin >> b;
+    cout << "Enter c: ";
+    cin >> c;
+
+    double discriminant = b*b - 4*a*c;
+
+    if (discriminant > 0) {
+        double root1 = (-b + sqrt(discriminant)) / (2*a);
+        double root2 = (-b - sqrt(discriminant)) / (2*a);
+        cout << "Two real roots: " << root1 << ", " << root2 << endl;
+    } else if (discriminant == 0) {
+        double root = -b / (2*a);
+        cout << "One real root: " << root << endl;
+    } else {
+        cout << "No real roots" << endl;
+    }
+
+    return 0;
+}
