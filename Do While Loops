@@ -1,0 +1,82 @@
+1. Python
+
+⚠️ Python does not have a native do...while loop. You can simulate it:
+
+while True:
+    number = int(input("Enter a number: "))
+    print("You entered:", number)
+    if number <= 0:
+        break
+
+
+2. PHP
+
+<?php
+do {
+    $number = (int)readline("Enter a number: ");
+    echo "You entered: $number\n";
+} while ($number > 0);
+?>
+
+
+3. MATLAB
+
+% MATLAB does not have a direct do...while loop.
+% You can simulate it like this:
+number = 1;
+while true
+    number = input('Enter a number: ');
+    disp(['You entered: ', num2str(number)]);
+    if number <= 0
+        break;
+    end
+end
+
+
+4. Java
+
+import java.util.Scanner;
+
+public class DoWhileExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int number;
+        do {
+            System.out.print("Enter a number: ");
+            number = scanner.nextInt();
+            System.out.println("You entered: " + number);
+        } while (number > 0);
+    }
+}
+
+
+5. C#
+
+using System;
+
+class Program {
+    static void Main() {
+        int number;
+        do {
+            Console.Write("Enter a number: ");
+            number = int.Parse(Console.ReadLine());
+            Console.WriteLine("You entered: " + number);
+        } while (number > 0);
+    }
+}
+
+
+6. C++
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number;
+    do {
+        cout << "Enter a number: ";
+        cin >> number;
+        cout << "You entered: " << number << endl;
+    } while (number > 0);
+    return 0;
+}
