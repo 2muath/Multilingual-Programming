@@ -1,0 +1,92 @@
+1. Python
+
+x = 10
+
+if x > 0:
+    print("Positive")
+else:
+    print("Non-positive")
+
+
+No parentheses around conditions.
+
+Indentation defines blocks.
+
+No semicolons.
+
+2. PHP
+
+$x = 10;
+
+if ($x > 0) {
+    echo "Positive";
+} else {
+    echo "Non-positive";
+}
+
+
+Uses $ for variables.
+
+Curly braces define blocks.
+
+Semicolons required.
+
+3. MATLAB
+
+x = 10;
+
+if x > 0
+    disp('Positive')
+else
+    disp('Non-positive')
+end
+
+
+No parentheses needed (but can be used).
+
+Uses end to close the block.
+
+disp() for output.
+
+int x = 10;
+
+if (x > 0) {
+    System.out.println("Positive");
+} else {
+    System.out.println("Non-positive");
+}
+
+
+Strongly typed.
+
+Semicolons and braces required.
+
+System.out.println for output.
+
+5. C#
+
+int x = 10;
+
+if (x > 0) {
+    Console.WriteLine("Positive");
+} else {
+    Console.WriteLine("Non-positive");
+}
+
+
+Very similar to Java.
+
+Uses Console.WriteLine.
+
+6. C++
+
+#include <iostream>
+using namespace std;
+
+int x = 10;
+
+if (x > 0) {
+    cout << "Positive" << endl;
+} else {
+    cout << "Non-positive" << endl;
+}
